@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comme:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comme", sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+.hero {
+  height: 100vh;
+  width: 40vw;
+  background-image: url(./img/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.logo-area {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  position: relative;
+  top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+}
+
+h1 {
+  color: white;
+  font-family: "Creepster", cursive;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+.credit {
+  position: absolute;
+  bottom: 5px;
+  color: white;
+  font-size: 0.7rem;
+  width: 100%;
+  text-align: center;
+}
+
+.credit a {
+  color: white;
+}
+
+main {
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.introduction,
+.form,
+.form-end {
+  height: 33vh;
+  padding: 0 3vw;
+}
+
+.introduction {
+  background-color: #f9fafb;
+  padding-top: 100px;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.form {
+  z-index: 10;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  padding-top: 1vw;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-end {
+  background-color: #f9fafb;
+  padding-top: 1vw;
+}
+
+input {
+  height: 1.5rem;
+  margin: 10px 0;
+  outline: none;
+  border: #e5e7eb solid 2px;
+  border-radius: 3px;
+}
+
+input:focus {
+  border: #91aaee solid 2px;
+}
+
+.error {
+  border: red solid 2px;
+
+}
+
+label {
+  font-size: 0.7rem;
+}
+
+input[type="button"] {
+  height: auto;
+  background-color: #596d48;
+  color: #f9fafb;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 3px 3px 3px rgba(89, 109, 72, 0.3);
+}
+
+.warning {
+  color: rgb(179, 4, 4);
+  font-size: .7rem;
+  display: none;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #596d48;
+  font-weight: bold;
+}
